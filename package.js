@@ -1,7 +1,7 @@
 Package.describe({
   name: 'konecty:mongo-counter',
   summary: "Atomic counters stored in MongoDB",
-  version: "0.0.5_2",
+  version: "0.0.5_3",
   git: "https://github.com/Konecty/meteor-mongo-counter.git"
 });
 
@@ -21,5 +21,5 @@ Package.onTest(function(api) {
   api.use('coffeescript');
   api.use('tinytest');
   api.use('konecty:mongo-counter');
-  api.addFiles('counter-tests.coffee', 'server');
+  api.addFiles('tests.counter.coffee', 'server');
 });
