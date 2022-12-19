@@ -18,7 +18,7 @@ _deleteCounters = (collection) ->
 
 _incrementCounter = (collection, counterName, amount = 1) ->
   newDoc = callCounter(
-    'findAndModify',
+    'findOneAndUpdate',
     collection,
     {_id: counterName},         # query
     null,                       # sort
